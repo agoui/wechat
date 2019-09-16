@@ -41,12 +41,12 @@ class LoginController extends Controller
         } else {
             //先注册，后登录
             DB::connection('wechat')->beginTransaction();//打开事务
-            $uid = DB::connection('wechat')->table('user')->insertGetId([
+            $uid = DB::table('user')->insertGetId([
                 'name' => $wechat_user_info['nickname'],
                 'password' => '',
                 'reg_time' => time()
             ]);
-            $insert_result = DB::connection('wechat')->table('wechat_user')->insert([
+            $insert_result = DB::table('wechat_user')->insert([
                 'uid' => $uid,
                 'openid' => $openid
             ]);
