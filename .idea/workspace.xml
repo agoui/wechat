@@ -254,9 +254,9 @@
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="452" />
-    <option name="y" value="88" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="451" />
+    <option name="y" value="87" />
     <option name="width" value="1455" />
     <option name="height" value="805" />
   </component>
